@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/Captura de tela 2025-06-12 145151.png" alt="Logo" class="logo">
+            <h1>Meus Eventos</h1>
+        </header>
+        <h2 class="question">Já adicionou seus eventos?</h2>
+        
+        <div class="button-container">
+            <button class="button">Criar evento Presencial ou Online</button>
+        </div>
+        
+        <hr>
+        
+        <div class="event-card">
+            <div class="event-image">
+                <img src="img/empreendendorismo.png" alt="Nome do Evento">
+            </div>
+            <div class="event-info">
+                <h3>Palestra Empreendendorismo</h3>
+                <div class="event-tag online">Online</div>
+                <div class="event-date">Dom 25 de Maio</div>
+                <div class="event-actions">
+                    <button class="button orange">Editar evento</button>
+                    <button class="button orange">Ver detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <div class="event-image">
+                <img src="img/negocios.png" alt="Nome do Evento">
+            </div>
+            <div class="event-info">
+                <h3>Aprenda sobre Negócios</h3>
+                <div class="event-tag presencial">Presencial</div>
+                <div class="event-date">Qua 28 de Maio</div>
+                <div class="event-actions">
+                    <button class="button orange">Editar evento</button>
+                    <button class="button orange">Ver detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    
+    <div class="evento-detalhes-container">
+        <h2>Detalhes do Evento do Usuário</h2>
+        
+        <div class="categoria-section">
+            <h3>Categoria dos Seus Eventos</h3>
+            <ul class="categoria-lista">
+                <li><a href="#" class="categoria-link" data-categoria="empreendedorismo">Empreendendorismo</a></li>
+                <li><a href="#" class="categoria-link" data-categoria="negocios">Negócios</a></li>
+            </ul>
+        </div>
+        
+        <hr>
+
+        <!-- Conteúdo que será alterado dinamicamente -->
+        <div id="empreendedorismo-content" class="evento-content" style="display: none;">
+            <h3>Palestra Empreendendorismo</h3>
+            <ul class="info-lista">
+                <li>25 de Maio</li>
+                <li>14h00 → 16h00</li>
+                <li>Presencial</li>
+            </ul>
+            <div class="descricao-section">
+                <p>Nosso evento "Desvendando o Futuro Empreendedor" é a sua chance de alavancar ideias e negócios. Descubra conceitos e estratégias essenciais com palestras inspiradoras, workshops práticos e networking com especialistas. Transforme suas ideias em resultados.</p>
+            </div>
+            <button class="voltar-btn">&lt; Voltar para Negócios</button>
+        </div>
+        
+        <div id="negocios-content" class="evento-content">
+            <h3>Aprenda sobre Negócios</h3>
+            <ul class="info-lista">
+                <li>28 de Maio</li>
+                <li>19h00 → 21h00</li>
+                <li>Online</li>
+            </ul>
+            <div class="descricao-section">
+                <p>Participe do nosso evento e descubra os principais conceitos e estratégias para empreender com sucesso. Ideal para quem quer iniciar ou aprimorar seu negócio, com palestras, workshops e networking com especialistas do mercado. Venha transformar suas ideias em resultados!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
